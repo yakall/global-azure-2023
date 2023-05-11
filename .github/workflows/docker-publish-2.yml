@@ -228,7 +228,11 @@ jobs:
       env:
         CR_PAT: ${{ secrets.CR_PAT }}
       run: |
+        pwd
+        dir
         cd ./infrastructure
+        echo "ALA MA KOTA"
+        pwd
         ./deploy-webapp.ps1 -studentprefix ya  # <-- This needs to
                                                 # match the student
                                                 # prefix we use in
